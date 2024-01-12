@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Calculatrice</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <a href="#" onclick="toggleCalculatrice(true)" title="Affiche la calculatrice">Faire apparaître la calculatrice</a>
+  <a href="#" onclick="toggleCalculatrice(false)" title="Cache la calculatrice">Faire disparaître la calculatrice</a>
+
+  <div id="calculatrice" style="display: none;">
+    <input type="text" id="nombre1" placeholder="Entrez un nombre" title="Entrez le premier nombre ici">
+    <select id="operation" title="Choisissez l'opération à effectuer">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+    </select>
+    <input type="text" id="nombre2" placeholder="Entrez un autre nombre" title="Entrez le second nombre ici">
+    <button onclick="calculer()" title="Cliquez pour effectuer le calcul">Calculer</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
